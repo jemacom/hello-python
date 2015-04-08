@@ -30,7 +30,7 @@ def main(argv):
 		num_commits = randint(1, 10)
 		for commit in range(0, num_commits):
 			subprocess.call("echo '" + curdate + str(randint(0, 1000000)) +"' > realwork.txt; git add -A; GIT_AUTHOR_DATE='" + curdate + "' GIT_COMMITTER_DATE='" + curdate + "' git commit -m 'update';", shell=True)
-			sleep(.5)
+			sleep(.3)
 		i += 1
 
 if __name__ == "__main__":
